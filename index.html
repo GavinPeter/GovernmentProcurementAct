@@ -145,7 +145,7 @@
 
 						do {
 							qa.push({
-							"quiz": line[i+1].split(' ')[0],
+							"quiz": line[i-1]+'.'+line[i+1].split(' ')[0],
 							"options": {
 							"1": line[i+1].split(' ')[1],
 							"2": line[i+1].split(' ')[2],
@@ -169,7 +169,7 @@
 
 						do {
 							qa.push({
-							"quiz": line[i+1].split(' ')[0],
+							"quiz": line[i-1]+'.'+line[i+1].split(' ')[0],
 							"options": {
 							"1": line[i+1].split(' ')[1],
 							"2": line[i+1].split(' ')[2],
@@ -193,7 +193,7 @@
 						i=i+6;
 						do {					
 							qa.push({
-							"quiz": line[i+1],
+							"quiz":line[i-1]+'.'+ line[i+1],
 							"options": {
 							"O": "O",
 							"X": "X"
@@ -211,7 +211,7 @@
 						i=i+5;
 						do {					
 							qa.push({
-							"quiz": line[i+1],
+							"quiz": line[i-1]+'.'+line[i+1],
 							"options": {
 							"O": "O",
 							"X": "X"
