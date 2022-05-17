@@ -89,7 +89,7 @@
         $(function() {
 		
 		//selectquiz( $(this).text() );
-		$(".nav li:nth-child("+(Math.floor(Math.random() * 14)+1)+")").addClass("active");
+		$(".nav li:nth-child("+(Math.floor(Math.random() * $('.nav li').length )+1)+")").addClass("active");
 		
 		selectquiz( $(".nav").find(".active").text() );
 		
